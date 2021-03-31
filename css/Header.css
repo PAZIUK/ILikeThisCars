@@ -1,0 +1,136 @@
+:root {
+  --h-h: 50px;
+  --color-1: #111d5e;
+  --color-2: #c70039;
+}
+header{
+	background-color: #c70039;
+}
+.header{
+	max-width: 1024px;
+	margin: 0px auto;
+	display: flex; 
+	height: var(--h-h);
+}
+
+
+
+.logo {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+.logo img{
+	height: var(--h-h);
+}
+
+
+
+.menu{
+	position: relative;
+	flex: 6;
+	height: var(--h-h);
+	padding: auto 1%;
+}
+ul#menu{
+	display: flex;
+	justify-content: space-between;
+	transition: ease 1.5s all;
+}
+ul#menu li{
+	display: inline-flex;
+	margin-right: 1%;
+}
+ul#menu li a{
+	text-decoration: none;
+	color:#fff;
+	padding: 0.2em auto;	
+}
+ul#menu li a:hover, ul#menu li a:active{
+	text-decoration: none;
+	border-bottom: 2px solid var(--color-1);
+	color:#fff;
+}
+ul#menu li a::hover, ul#menu li a::active{
+	text-decoration: none;
+	border-bottom: 2px solid var(--color-1);
+	color:#fff;
+}
+ul#menu li.active{
+	text-decoration: none;
+	border-bottom: 2px solid var(--color-1);
+	color:#fff;
+}
+ul#menu li.active:hover, ul#menu li.active:active{
+	text-decoration: none;
+	border: none;
+	color:#fff;
+}
+.mobile-bar{
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5em 1em;
+	display: none;
+	border-radius: 10px;
+	border: 2px solid var(--color-1);;
+	margin: 1%;
+}
+.mobile-bar span{
+	display: block;
+	height: 2px;
+	width: 20px;
+	margin: 2px;
+	background-color: var(--color-1);
+}
+
+
+
+
+.search{
+	flex: 3;
+	margin: auto 1%;
+	padding: 1%;
+}
+.search input[type="search"] {
+    padding: 2.5%;
+    border-bottom: 2px solid var(--color-1);
+	border-right: none;
+	border-left: 2px solid var(--color-1);
+	border-top: 2px solid var(--color-1);
+    margin-right: -1%;
+    border-radius: 10px 0px 0px 10px;
+    outline: none;
+    max-width: 150px;
+}
+.search button{
+	margin-left: -1%;
+	outline: none;
+	background-color: #fff;
+	color: #000;
+	font-weight: bold;
+	padding: 2.5%;
+    border-bottom: 2px solid var(--color-1);
+	border-right: 2px solid var(--color-1);
+	border-left: none;
+	border-top: 2px solid var(--color-1);
+    border-radius: 0px 10px 10px 0px;
+}
+.search button:hover{
+	cursor: pointer;
+}
+
+
+@media(max-width:768px){
+	.menu{
+		display: none;
+	}
+	.search{
+		display: none;
+	}
+	.mobile-bar{
+		flex:1;
+		display: flex;
+		max-width: 30px;
+	}
+}
