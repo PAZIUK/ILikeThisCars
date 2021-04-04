@@ -3,6 +3,80 @@
   --color-2: #c70039;
 }
 
+.toggleMenu {
+  background-color: #275698;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease 0s;
+  padding: 0;
+  transform: translate(100%, 0px);
+}
+.toggleMenu ul.menu li{
+  list-style: none;
+  color: #000;
+  font-size: 1em;
+}
+.toggleMenu ul.menu{
+  letter-spacing: 2px;
+  margin:0px;
+  list-style: none;
+  display: -webkit-flex; 
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.toggleMenu a {
+  padding: 1em;
+  color: #fff;
+  text-decoration: none;
+  border: 3px solid transparent;
+  transition: all .1s;
+  display: flex;
+  flex: 1 1 auto;
+}
+.toggleMenu a:hover, .toggleMenu a:active {
+  opacity: 1;
+  border-bottom: 3px solid #ff2e63;
+  transition: all 0.5s;
+}
+.toggleMenu a::hover, .toggleMenu a::active {
+  opacity: 1;
+  border-bottom: 3px solid #ff2e63;
+  border-top: 3px solid #ff2e63;
+  transition: all 0.5s;
+} 
+.toggleMenu .search{
+	margin: auto 1%;
+	padding: 1%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toggleMenu .search input[type="search"] {
+	border: none;
+    outline: none;
+    max-width: 100px;
+    margin-right: 2%;
+    padding: 2.5%;
+}
+.toggleMenu .search button{
+	background: none;
+	outline: none;
+	font-weight: bold;
+	padding: 2.5%;
+	border: none;
+}
+.toggleMenu .search button:hover{
+	cursor: pointer;
+}
+.toggleMenu.active{
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px,0px);
+}
 .wrapper{
 	flex: 1 1 auto;
 	max-width: 1024px;
@@ -10,6 +84,7 @@
 	display: flex;
 	align-items: flex-start;
 	overflow: hidden;
+	position: relative;
 }
 aside{
 	flex: 1;

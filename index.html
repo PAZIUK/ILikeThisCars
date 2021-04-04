@@ -4,23 +4,24 @@
 
 		<!-- Meta tags -->
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<!-- Title -->
 		<title>I Like This Cars</title>
 
 		<!-- Link CSS files -->
-		<link rel="stylesheet" href="Css/Main.css">
-		<link rel="stylesheet" href="Css/Header.css">
-		<link rel="stylesheet" href="Css/Wrapper.css">
-		<link rel="stylesheet" href="Css/Footer.css">
+		<link rel="stylesheet" href="css/Main.css">
+		<link rel="stylesheet" href="css/Header.css">
+		<link rel="stylesheet" href="css/Wrapper.css">
+		<link rel="stylesheet" href="css/Footer.css">
 
 		<!-- Link Favicon-->
-		<link rel="apple-touch-icon" sizes="76x76" href="Images/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
-		<link rel="manifest" href="Images/site.webmanifest">
-		<link rel="mask-icon" href="Images/safari-pinned-tab.svg" color="#1c00b8">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon.png">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+		<link rel="manifest" href="img/site.webmanifest">
+		<link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#1c00b8">
 		<meta name="msapplication-TileColor" content="#9f00a7">
 		<meta name="theme-color" content="#ffffff">
 
@@ -32,8 +33,8 @@
 			<div class="header">
 
 				<div class="logo">
-					<a href="/">
-						<img src="Images/logo.png" alt="LOGO" class="logo">
+					<a href="">
+						<img src="img/logo.png" alt="LOGO" class="logo">
 						<p></p>
 					</a>
 				</div>
@@ -54,12 +55,10 @@
 					</ul>
 				</div>
 				<div class="search">
-					<form action="#">
-						<input type="search" placeholder="Search">
-						<button type="submit">Search</button>
-					</form>
+					<input type="search" placeholder="Search">
+					<button type="submit"><img src="https://img.icons8.com/windows/32/ffffff/search-dollar.png"/></button>
 				</div>
-				<div class="mobile-bar">
+				<div class="mobile-bar"onclick="toggle();">
 					<span></span>
 					<span></span>
 					<span></span>
@@ -70,6 +69,26 @@
 		
 		<!-- Main part -->
 		<div class="wrapper">
+			<div class="toggleMenu">
+	        	<ul class="menu">
+					<li>
+						<a href="/">Main</a>
+					</li>
+					<li>
+						<a href="#">All our cars</a>
+					</li>
+					<li>
+						<a href="#">Price</a>
+					</li>
+					<li>
+						<a href="#">About us</a>
+					</li>
+				</ul>
+				<div class="search">
+					<input type="search" placeholder="Search">
+					<button type="submit"><img src="https://img.icons8.com/windows/32/ffffff/search-dollar.png"/></button>
+				</div>
+		     </div>
 			<aside>
 				<div class="title">
 					<p>Navigation</p>
@@ -138,7 +157,7 @@
 						<button><a href="https://www.google.com/search?q=rent+dodge+challenger&safe=active&rlz=1C1GCEA_enUA911UA911&sxsrf=ALeKk01xndh90pVTm9ffsZJQQDnzdh8I7w%3A1616414995179&ei=E4lYYN-2CoCSwPAPi9uvSA&oq=rent+dodge+challenger&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBQgAEMsBUM7QAVjw0gFg4dUBaABwAngAgAGTAogBzgaSAQUwLjQuMZgBAKABAaoBB2d3cy13aXrAAQE&sclient=gws-wiz&ved=0ahUKEwifjOOM78PvAhUACRAIHYvtCwkQ4dUDCA0&uact=5" target="_blank">Rent car</a></button>
 						<button><a href="https://en.wikipedia.org/wiki/Dodge_Challenger" target="_blank">More info</a></button>
 					</div>
-					<img src="Images/dodge-challenger.jpg" alt="" class="car-img">
+					<img src="img/dodge-challenger.jpg" alt="" class="car-img">
 				</div>
 				<div class="car" id="bugatti_chiron">
 					<div class="title">
@@ -186,7 +205,7 @@
 						<button><a href="https://www.google.com/search?q=rent+bugatti+chiron&safe=active&rlz=1C1GCEA_enUA911UA911&sxsrf=ALeKk00LGz0yhvG9_3hqsTEcrh-mOLBE-Q%3A1616415024560&ei=MIlYYOjcIZfX3AOn0KrwBg&oq=rent+bugatt&gs_lcp=Cgdnd3Mtd2l6EAMYAjIFCAAQywEyAggAMgUIABDLATIFCAAQywEyBQgAEMsBMgUIABDLATIFCAAQywEyBggAEBYQHjIGCAAQFhAeMgYIABAWEB46BwgAELADEEM6DQgAEMcBEKMCELADEEM6BwgAEEcQsANQlPQIWPWECWDEkwloAXACeACAAZMBiAHkB5IBAzAuN5gBAKABAaoBB2d3cy13aXrIAQrAAQE&sclient=gws-wiz" target="_blank">Rent car</a></button>
 						<button><a href="https://en.wikipedia.org/wiki/Bugatti_Chiron" target="_blank">More info</a></button>
 					</div>
-					<img src="Images/bugatti-chiron-pur-sport.jpg" alt="" class="car-img">
+					<img src="img/bugatti-chiron-pur-sport.jpg" alt="" class="car-img">
 				</div>
 				<div class="car" id="mersedes_sls">
 					<div class="title">
@@ -234,7 +253,7 @@
 						<button><a href="https://www.google.com/search?q=rent+mercedes+sls&rlz=1C1GCEA_enUA911UA911&oq=rent+mrsedes+sls&aqs=chrome..69i57j0i22i30l2.3958j0j7&sourceid=chrome&ie=UTF-8" target="_blank">Rent car</a></button>
 						<button><a href="https://en.wikipedia.org/wiki/Mercedes-Benz_SLS_AMG" target="_blank">More info</a></button>
 					</div>
-					<img src="Images/mercedes-benz sls amg.jpg" alt="" class="car-img">
+					<img src="img/mercedes-benz sls amg.jpg" alt="" class="car-img">
 				</div>
 			</main>
 		</div>
@@ -285,6 +304,8 @@
 					</div>
 				</div>
 			</div>
+
+			<script src="js/js.js"></script>
 
 	</body>
 </html>
