@@ -4,7 +4,7 @@
 
 The website was created by Serhiy Paziuk for his portfolio. <br/>
 
-### Website : https://paziuk.github.io/projects/sites/ilikethiscars/index.html  <br/>
+### Website : https://paziuk.github.io/Projects/Sites/ILikeThisCars/index.html  <br/>
 
 ## For creating were used <br/>
 
