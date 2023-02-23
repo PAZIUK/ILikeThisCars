@@ -2,9 +2,9 @@
 
 ### About <br/>
 
-The website was created by Serhiy Paziuk for his portfolio. <br/>
+Welcome to ILikeThisCars dedicated to cars, where we provide all the latest news, reviews, and insights about the automotive industry. Our platform offers a wide range of resources for car enthusiasts, including in-depth car reviews, comparisons, and buying guides, as well as the latest industry news, trends, and developments.<br/>
 
-### Website : https://paziuk.github.io/Projects/Sites/ILikeThisCars/index.html  <br/>
+### Link to the website you can find [here](https://github.com/PAZIUK/PAZIUK/blob/main/README.md#my-projects)<br/>
 
 ## For creating were used <br/>
 
